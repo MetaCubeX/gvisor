@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:build go1.13 && !go1.20
-// +build go1.13,!go1.20
+//go:build go1.13 && !go1.21
+// +build go1.13,!go1.21
 
 // TODO(go.dev/issue/8422): Remove this file once Go 1.19 is no longer
 // supported.
