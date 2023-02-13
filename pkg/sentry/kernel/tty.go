@@ -14,7 +14,7 @@
 
 package kernel
 
-import "gvisor.dev/gvisor/pkg/sync"
+import "github.com/metacubex/gvisor/pkg/sync"
 
 // TTY defines the relationship between a thread group and its controlling
 // terminal.

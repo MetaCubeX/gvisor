@@ -15,7 +15,7 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/context"
 )
 
 // AIOCallback is an function that does asynchronous I/O on behalf of a task.

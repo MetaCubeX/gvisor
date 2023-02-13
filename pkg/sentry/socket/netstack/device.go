@@ -14,7 +14,7 @@
 
 package netstack
 
-import "gvisor.dev/gvisor/pkg/sentry/device"
+import "github.com/metacubex/gvisor/pkg/sentry/device"
 
 // netstackDevice is the endpoint socket virtual device.
 var netstackDevice = device.NewAnonDevice()

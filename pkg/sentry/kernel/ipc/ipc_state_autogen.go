@@ -3,7 +3,7 @@
 package ipc
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (o *Object) StateTypeName() string {

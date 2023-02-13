@@ -20,6 +20,6 @@ package platforms
 
 import (
 	// Import platforms that runsc might use.
-	_ "gvisor.dev/gvisor/pkg/sentry/platform/kvm"
-	_ "gvisor.dev/gvisor/pkg/sentry/platform/ptrace"
+	_ "github.com/metacubex/gvisor/pkg/sentry/platform/kvm"
+	_ "github.com/metacubex/gvisor/pkg/sentry/platform/ptrace"
 )

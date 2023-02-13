@@ -3,7 +3,7 @@
 package time
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (t *Time) StateTypeName() string {
