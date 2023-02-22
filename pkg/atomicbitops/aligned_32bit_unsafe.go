@@ -21,7 +21,7 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // Int64 is an atomic int64 that is guaranteed to be 64-bit

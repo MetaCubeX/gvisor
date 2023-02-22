@@ -15,7 +15,7 @@
 package inet
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/context"
 )
 
 // contextID is the inet package's type for context.Context.Value keys.

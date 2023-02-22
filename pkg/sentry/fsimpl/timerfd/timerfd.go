@@ -16,14 +16,14 @@
 package timerfd
 
 import (
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/usermem"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	ktime "github.com/metacubex/gvisor/pkg/sentry/kernel/time"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/usermem"
+	"github.com/metacubex/gvisor/pkg/waiter"
 )
 
 // TimerFileDescription implements vfs.FileDescriptionImpl for timer fds. It also

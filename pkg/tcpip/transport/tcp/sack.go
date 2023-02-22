@@ -15,8 +15,8 @@
 package tcp
 
 import (
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/seqnum"
+	"github.com/metacubex/gvisor/pkg/tcpip/header"
+	"github.com/metacubex/gvisor/pkg/tcpip/seqnum"
 )
 
 const (

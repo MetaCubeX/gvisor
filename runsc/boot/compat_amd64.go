@@ -18,10 +18,10 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	rpb "gvisor.dev/gvisor/pkg/sentry/arch/registers_go_proto"
-	"gvisor.dev/gvisor/pkg/sentry/strace"
+	"github.com/metacubex/gvisor/pkg/abi"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	rpb "github.com/metacubex/gvisor/pkg/sentry/arch/registers_go_proto"
+	"github.com/metacubex/gvisor/pkg/sentry/strace"
 )
 
 const (

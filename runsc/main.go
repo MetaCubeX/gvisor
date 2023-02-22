@@ -16,7 +16,7 @@
 package main
 
 import (
-	"gvisor.dev/gvisor/runsc/cli"
+	"github.com/metacubex/gvisor/runsc/cli"
 )
 
 func main() {

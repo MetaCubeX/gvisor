@@ -20,9 +20,9 @@ import (
 	"runtime"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/fdchannel"
-	"gvisor.dev/gvisor/pkg/flipcall"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/fdchannel"
+	"github.com/metacubex/gvisor/pkg/flipcall"
+	"github.com/metacubex/gvisor/pkg/log"
 )
 
 var (

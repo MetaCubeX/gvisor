@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // chdirMu is the global mutex that synchronizes host chdir operations.

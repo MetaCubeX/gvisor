@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/abi"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
 
-	"gvisor.dev/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/hostarch"
 )
 
 // signalNames contains the names of all named signals.

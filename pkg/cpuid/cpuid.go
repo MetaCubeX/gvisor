@@ -34,7 +34,7 @@ import (
 	"runtime"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/log"
 )
 
 // contextID is the package for context.Context.Value keys.

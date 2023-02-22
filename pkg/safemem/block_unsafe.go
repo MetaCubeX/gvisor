@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/gohacks"
-	"gvisor.dev/gvisor/pkg/safecopy"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/gohacks"
+	"github.com/metacubex/gvisor/pkg/safecopy"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // A Block is a range of contiguous bytes, similar to []byte but with the

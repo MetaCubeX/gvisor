@@ -37,7 +37,7 @@ import (
 	runc "github.com/containerd/go-runc"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/shim/runsc"
+	"github.com/metacubex/gvisor/pkg/shim/runsc"
 )
 
 const statusStopped = "stopped"

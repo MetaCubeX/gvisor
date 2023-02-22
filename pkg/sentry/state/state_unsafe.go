@@ -20,7 +20,7 @@ import (
 	"unsafe"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
 )
 
 // CPUTime returns the CPU time usage by Sentry and app.

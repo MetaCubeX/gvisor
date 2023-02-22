@@ -16,8 +16,8 @@ package filter
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/socket/hostinet"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/hostinet"
 )
 
 // hostInetFilters contains syscalls that are needed by sentry/socket/hostinet.
