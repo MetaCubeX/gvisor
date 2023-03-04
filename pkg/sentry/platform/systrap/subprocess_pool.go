@@ -17,7 +17,7 @@ package systrap
 import (
 	"sync"
 
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/usertrap"
+	"github.com/metacubex/gvisor/pkg/sentry/platform/systrap/usertrap"
 )
 
 // subprocessPool exists to solve these distinct problems:

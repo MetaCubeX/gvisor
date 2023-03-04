@@ -12,10 +12,10 @@
 package arch
 
 import (
-    "gvisor.dev/gvisor/pkg/abi/linux"
-    "gvisor.dev/gvisor/pkg/gohacks"
-    "gvisor.dev/gvisor/pkg/hostarch"
-    "gvisor.dev/gvisor/pkg/marshal"
+    "github.com/metacubex/gvisor/pkg/abi/linux"
+    "github.com/metacubex/gvisor/pkg/gohacks"
+    "github.com/metacubex/gvisor/pkg/hostarch"
+    "github.com/metacubex/gvisor/pkg/marshal"
     "io"
     "reflect"
     "runtime"

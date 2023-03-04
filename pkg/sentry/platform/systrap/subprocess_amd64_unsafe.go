@@ -20,8 +20,8 @@ package systrap
 import (
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/platform/systrap/sysmsg"
 )
 
 func (s *subprocess) restoreFPState(msg *sysmsg.Msg, fpuToMsgOffset uint64, c *context, ac *arch.Context64) {

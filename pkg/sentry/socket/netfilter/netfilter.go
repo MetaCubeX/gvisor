@@ -22,13 +22,13 @@ import (
 	"fmt"
 	"math/rand"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/syserr"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/syserr"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
 )
 
 // enableLogging controls whether to log the (de)serialization of netfilter

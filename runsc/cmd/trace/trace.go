@@ -20,7 +20,7 @@ import (
 	"context"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // Trace implements subcommands.Command for the "trace" command.

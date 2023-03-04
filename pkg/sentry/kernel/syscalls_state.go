@@ -17,8 +17,8 @@ package kernel
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/abi"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
 )
 
 // syscallTableInfo is used to reload the SyscallTable.

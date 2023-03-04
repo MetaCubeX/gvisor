@@ -3,7 +3,7 @@
 package futex
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (p *AtomicPtrBucket) StateTypeName() string {

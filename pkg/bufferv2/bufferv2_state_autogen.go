@@ -3,7 +3,7 @@
 package bufferv2
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (b *Buffer) StateTypeName() string {

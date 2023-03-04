@@ -22,10 +22,10 @@ import (
 	"strconv"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/refs"
+	"github.com/metacubex/gvisor/pkg/sentry/watchdog"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // RegisterFlags registers flags used to populate Config.

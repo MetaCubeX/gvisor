@@ -20,8 +20,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/checksum"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/checksum"
 )
 
 // PseudoHeaderChecksum calculates the pseudo-header checksum for the given

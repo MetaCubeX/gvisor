@@ -15,11 +15,11 @@
 package mm
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/sentry/memmap"
+	"github.com/metacubex/gvisor/pkg/sentry/pgalloc"
 )
 
 // SpecialMappable implements memmap.MappingIdentity and memmap.Mappable with

@@ -18,8 +18,8 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
 )
 
 // Clone implements linux syscall clone(2).

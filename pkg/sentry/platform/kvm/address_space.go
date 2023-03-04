@@ -15,12 +15,12 @@
 package kvm
 
 import (
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/ring0/pagetables"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/ring0/pagetables"
+	"github.com/metacubex/gvisor/pkg/sentry/memmap"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // dirtySet tracks vCPUs for invalidation.

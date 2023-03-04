@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/pkg/refs"
+	"github.com/metacubex/gvisor/pkg/sentry/watchdog"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // Config holds configuration that is not part of the runtime spec.
