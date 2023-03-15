@@ -15,8 +15,8 @@
 package devpts
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
 )
 
 // Terminal is a pseudoterminal.

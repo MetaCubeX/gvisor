@@ -3,7 +3,7 @@
 package usage
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (s *CPUStats) StateTypeName() string {

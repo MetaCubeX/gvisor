@@ -3,7 +3,7 @@
 package msgqueue
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (l *msgList) StateTypeName() string {

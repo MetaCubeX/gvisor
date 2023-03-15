@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/shim/runsc"
+	"github.com/metacubex/gvisor/pkg/shim/runsc"
 )
 
 const (

@@ -21,7 +21,7 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux/errno"
+	"github.com/metacubex/gvisor/pkg/abi/linux/errno"
 )
 
 const maxErrno = 134

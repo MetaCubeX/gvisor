@@ -3,7 +3,7 @@
 package fsutil
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (d *DirtyInfo) StateTypeName() string {
