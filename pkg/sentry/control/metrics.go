@@ -15,9 +15,9 @@
 package control
 
 import (
-	"gvisor.dev/gvisor/pkg/metric"
-	pb "gvisor.dev/gvisor/pkg/metric/metric_go_proto"
-	"gvisor.dev/gvisor/pkg/prometheus"
+	"github.com/metacubex/gvisor/pkg/metric"
+	pb "github.com/metacubex/gvisor/pkg/metric/metric_go_proto"
+	"github.com/metacubex/gvisor/pkg/prometheus"
 )
 
 // Metrics includes metrics-related RPC stubs.

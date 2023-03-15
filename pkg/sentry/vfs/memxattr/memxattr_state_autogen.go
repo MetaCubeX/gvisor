@@ -3,7 +3,7 @@
 package memxattr
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (x *SimpleExtendedAttributes) StateTypeName() string {
