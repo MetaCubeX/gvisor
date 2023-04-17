@@ -19,8 +19,8 @@ import (
 	"sync/atomic"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/sentry/platform/systrap/sysmsg"
 )
 
 const (

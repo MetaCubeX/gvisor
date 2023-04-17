@@ -17,12 +17,12 @@ package control
 import (
 	"errors"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/state"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/pkg/urpc"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/sentry/state"
+	"github.com/metacubex/gvisor/pkg/sentry/watchdog"
+	"github.com/metacubex/gvisor/pkg/urpc"
 )
 
 // ErrInvalidFiles is returned when the urpc call to Save does not include an

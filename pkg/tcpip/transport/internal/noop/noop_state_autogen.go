@@ -3,7 +3,7 @@
 package noop
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (ep *endpoint) StateTypeName() string {

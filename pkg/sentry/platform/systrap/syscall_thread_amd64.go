@@ -22,7 +22,7 @@ import (
 	"runtime"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
 )
 
 func (t *syscallThread) detach() {

@@ -17,14 +17,14 @@ package linux
 import (
 	"fmt"
 
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/marshal/primitive"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/sentry/seccheck"
+	pb "github.com/metacubex/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/metacubex/gvisor/pkg/usermem"
 	"google.golang.org/protobuf/proto"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/usermem"
 )
 
 func newExitMaybe(info kernel.SyscallInfo) *pb.Exit {

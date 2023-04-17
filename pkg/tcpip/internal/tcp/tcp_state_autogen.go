@@ -3,7 +3,7 @@
 package tcp
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (offset *TSOffset) StateTypeName() string {

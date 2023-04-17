@@ -29,13 +29,13 @@ import (
 	"syscall"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/urpc"
-	"gvisor.dev/gvisor/runsc/boot"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/container"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/urpc"
+	"github.com/metacubex/gvisor/runsc/boot"
+	"github.com/metacubex/gvisor/runsc/cmd/util"
+	"github.com/metacubex/gvisor/runsc/config"
+	"github.com/metacubex/gvisor/runsc/container"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // PortForward implements subcommands.Command for the "portforward" command.
