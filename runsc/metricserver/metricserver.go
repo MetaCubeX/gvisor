@@ -34,16 +34,16 @@ import (
 	"syscall"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/prometheus"
-	"gvisor.dev/gvisor/pkg/sentry/control"
-	"gvisor.dev/gvisor/pkg/state"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/container"
-	"gvisor.dev/gvisor/runsc/sandbox"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/prometheus"
+	"github.com/metacubex/gvisor/pkg/sentry/control"
+	"github.com/metacubex/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/runsc/config"
+	"github.com/metacubex/gvisor/runsc/container"
+	"github.com/metacubex/gvisor/runsc/sandbox"
 )
 
 const (

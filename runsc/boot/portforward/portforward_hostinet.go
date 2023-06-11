@@ -20,12 +20,12 @@ import (
 	"sync"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	fileDescriptor "gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/fdnotifier"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/metacubex/gvisor/pkg/cleanup"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	fileDescriptor "github.com/metacubex/gvisor/pkg/fd"
+	"github.com/metacubex/gvisor/pkg/fdnotifier"
+	"github.com/metacubex/gvisor/pkg/waiter"
 )
 
 var (

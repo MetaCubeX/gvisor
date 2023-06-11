@@ -3,8 +3,8 @@ package kernel
 import (
 	"unsafe"
 
-	"gvisor.dev/gvisor/pkg/gohacks"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/gohacks"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // SeqAtomicLoad returns a copy of *ptr, ensuring that the read does not race

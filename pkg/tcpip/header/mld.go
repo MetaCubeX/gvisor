@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 const (

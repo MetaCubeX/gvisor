@@ -21,8 +21,8 @@ import (
 	"os"
 	"path"
 
-	"gvisor.dev/gvisor/pkg/eventfd"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/eventfd"
+	"github.com/metacubex/gvisor/pkg/log"
 )
 
 // NotifyCurrentMemcgPressureCallback requests that f is called whenever the

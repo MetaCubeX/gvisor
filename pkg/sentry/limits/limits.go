@@ -17,7 +17,7 @@ package limits
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // LimitType defines a type of resource limit.

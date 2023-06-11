@@ -6,7 +6,7 @@
 package kvm
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (p *machineAtomicPtr) StateTypeName() string {
