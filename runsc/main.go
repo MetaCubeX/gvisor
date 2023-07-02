@@ -19,8 +19,8 @@
 package main
 
 import (
-	"gvisor.dev/gvisor/runsc/cli"
-	"gvisor.dev/gvisor/runsc/version"
+	"github.com/metacubex/gvisor/runsc/cli"
+	"github.com/metacubex/gvisor/runsc/version"
 )
 
 // version.Version is set dynamically, but needs to be

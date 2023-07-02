@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"math"
 
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/log"
 )
 
 type endpointControlImpl struct {

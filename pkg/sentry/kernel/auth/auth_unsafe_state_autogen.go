@@ -3,7 +3,7 @@
 package auth
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (p *AtomicPtrCredentials) StateTypeName() string {

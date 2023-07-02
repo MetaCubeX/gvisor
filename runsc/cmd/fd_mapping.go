@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gvisor.dev/gvisor/runsc/boot"
+	"github.com/metacubex/gvisor/runsc/boot"
 )
 
 // fdMappings can be used with flags that appear multiple times.
