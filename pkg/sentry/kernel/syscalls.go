@@ -19,15 +19,15 @@ import (
 	"strconv"
 
 	"google.golang.org/protobuf/proto"
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/bits"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/metric"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/abi"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/bits"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/metric"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/seccheck"
+	pb "github.com/metacubex/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 const (

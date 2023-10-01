@@ -17,10 +17,10 @@
 package memdev
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/devtmpfs"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/sentry/fsimpl/devtmpfs"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
 )
 
 // Register registers all devices implemented by this package in vfsObj.

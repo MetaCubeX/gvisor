@@ -15,19 +15,19 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/kernfs"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/nsfs"
-	"gvisor.dev/gvisor/pkg/sentry/inet"
-	"gvisor.dev/gvisor/pkg/sentry/seccheck"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/usermem"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/bpf"
+	"github.com/metacubex/gvisor/pkg/cleanup"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/sentry/fsimpl/kernfs"
+	"github.com/metacubex/gvisor/pkg/sentry/fsimpl/nsfs"
+	"github.com/metacubex/gvisor/pkg/sentry/inet"
+	"github.com/metacubex/gvisor/pkg/sentry/seccheck"
+	pb "github.com/metacubex/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/usermem"
 )
 
 // SupportedCloneFlags is the bitwise OR of all the supported flags for clone.

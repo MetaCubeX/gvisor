@@ -3,8 +3,8 @@
 package fuse
 
 import (
-    "gvisor.dev/gvisor/pkg/hostarch"
-    "gvisor.dev/gvisor/pkg/marshal"
+    "github.com/metacubex/gvisor/pkg/hostarch"
+    "github.com/metacubex/gvisor/pkg/marshal"
     "io"
 )
 

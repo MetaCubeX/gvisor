@@ -26,15 +26,15 @@ import (
 	"strconv"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	rwfd "gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/fsutil"
-	"gvisor.dev/gvisor/pkg/lisafs"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/runsc/config"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/cleanup"
+	rwfd "github.com/metacubex/gvisor/pkg/fd"
+	"github.com/metacubex/gvisor/pkg/fsutil"
+	"github.com/metacubex/gvisor/pkg/lisafs"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/marshal/primitive"
+	"github.com/metacubex/gvisor/runsc/config"
 )
 
 // LINT.IfChange

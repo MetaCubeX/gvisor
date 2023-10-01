@@ -18,10 +18,10 @@ package seccheck
 
 import (
 	"google.golang.org/protobuf/proto"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/context"
-	pb "gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/context"
+	pb "github.com/metacubex/gvisor/pkg/sentry/seccheck/points/points_go_proto"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // A Point represents a checkpoint, a point at which a security check occurs.

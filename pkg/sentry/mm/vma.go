@@ -18,14 +18,14 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel/auth"
+	"github.com/metacubex/gvisor/pkg/sentry/limits"
+	"github.com/metacubex/gvisor/pkg/sentry/memmap"
 )
 
 // Caller provides the droppedIDs slice to collect dropped mapping

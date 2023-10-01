@@ -18,11 +18,11 @@
 package filter
 
 import (
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/devices/accel"
-	"gvisor.dev/gvisor/pkg/sentry/devices/nvproxy"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/sentry/devices/accel"
+	"github.com/metacubex/gvisor/pkg/sentry/devices/nvproxy"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
 )
 
 // Options are seccomp filter related options.

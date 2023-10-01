@@ -25,9 +25,9 @@ import (
 	"regexp"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/runsc/config"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // Install implements subcommands.Command.

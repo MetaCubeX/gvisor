@@ -15,10 +15,10 @@
 package vfs
 
 import (
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/fspath"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/fspath"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 var fspathBuilderPool = sync.Pool{

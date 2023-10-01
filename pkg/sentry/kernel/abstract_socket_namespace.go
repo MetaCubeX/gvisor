@@ -18,10 +18,10 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/socket/unix/transport"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/refs"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/unix/transport"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // +stateify savable

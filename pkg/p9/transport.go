@@ -21,10 +21,10 @@ import (
 	"io/ioutil"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/unet"
+	"github.com/metacubex/gvisor/pkg/fd"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/unet"
 )
 
 // ErrSocket is returned in cases of a socket issue.

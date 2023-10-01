@@ -3,9 +3,9 @@
 package kernel
 
 import (
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/state"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/bpf"
+	"github.com/metacubex/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 func (a *abstractEndpoint) StateTypeName() string {

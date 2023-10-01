@@ -15,9 +15,9 @@
 package strace
 
 import (
-	"gvisor.dev/gvisor/pkg/abi"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/abi"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
 )
 
 // FormatSpecifier values describe how an individual syscall argument should be

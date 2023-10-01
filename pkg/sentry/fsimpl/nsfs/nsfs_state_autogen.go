@@ -3,7 +3,7 @@
 package nsfs
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (r *inodeRefs) StateTypeName() string {

@@ -20,7 +20,7 @@ package metric
 import (
 	"fmt"
 
-	pb "gvisor.dev/gvisor/pkg/metric/metric_go_proto"
+	pb "github.com/metacubex/gvisor/pkg/metric/metric_go_proto"
 )
 
 // This file defines conditional metrics that are meant to be used when profiling

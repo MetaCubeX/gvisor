@@ -15,12 +15,12 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	ktime "github.com/metacubex/gvisor/pkg/sentry/kernel/time"
+	"github.com/metacubex/gvisor/pkg/sentry/usage"
 )
 
 func getrusage(t *kernel.Task, which int32) linux.Rusage {

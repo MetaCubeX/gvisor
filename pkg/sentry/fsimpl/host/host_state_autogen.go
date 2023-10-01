@@ -3,7 +3,7 @@
 package host
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (v *virtualOwner) StateTypeName() string {

@@ -19,9 +19,9 @@ import (
 	"os"
 	"sync"
 
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/metric"
+	"github.com/metacubex/gvisor/pkg/fd"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/metric"
 )
 
 // DefaultSessionName is the name of the only session that can exist in the

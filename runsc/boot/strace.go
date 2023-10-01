@@ -17,8 +17,8 @@ package boot
 import (
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/sentry/strace"
-	"gvisor.dev/gvisor/runsc/config"
+	"github.com/metacubex/gvisor/pkg/sentry/strace"
+	"github.com/metacubex/gvisor/runsc/config"
 )
 
 func enableStrace(conf *config.Config) error {

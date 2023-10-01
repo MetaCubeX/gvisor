@@ -22,11 +22,11 @@ import (
 	"io"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/cpuid"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/safecopy"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/cpuid"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/safecopy"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // FPSoftwareFrame is equivalent to struct _fpx_sw_bytes, the data stored by

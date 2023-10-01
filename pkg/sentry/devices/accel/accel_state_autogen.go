@@ -3,7 +3,7 @@
 package accel
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (r *DevAddrRange) StateTypeName() string {
