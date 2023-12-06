@@ -213,7 +213,7 @@ func (b *ProgramBuilder) resolveLabels() error {
 			b.instructions[s.line] = inst
 		}
 	}
-	clear(b.labels)
+	b.labels = map[string]*label{}
 	return nil
 }
 

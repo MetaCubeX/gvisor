@@ -992,7 +992,7 @@ func (vfs *VirtualFilesystem) PopDelayedDecRefs() []refs.RefCounter {
 			rcs = append(rcs, rc)
 		}
 	}
-	clear(vfs.toDecRef)
+	vfs.toDecRef = map[refs.RefCounter]int{}
 	return rcs
 }
 
@@ -1023,7 +1023,6 @@ func (vfs *VirtualFilesystem) unlockMounts(ctx context.Context) {
 		return
 	}
 	toDecRef := vfs.toDecRef
-	// Can't use `clear` here as this would reference the same map as `toDecRef`.
 	vfs.toDecRef = map[refs.RefCounter]int{}
 	vfs.mountMu.Unlock()
 	for rc, refs := range toDecRef {
