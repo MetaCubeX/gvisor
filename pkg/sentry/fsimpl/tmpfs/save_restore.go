@@ -17,9 +17,9 @@ package tmpfs
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/sentry/pgalloc"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
 )
 
 // afterLoad is called by stateify.

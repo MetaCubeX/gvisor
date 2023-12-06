@@ -18,16 +18,16 @@ import (
 	"fmt"
 
 	"golang.org/x/sync/errgroup"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/seccomp/precompiledseccomp"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
 
 	// Compile filters for KVM.
-	_ "gvisor.dev/gvisor/pkg/sentry/platform/kvm"
+	_ "github.com/metacubex/gvisor/pkg/sentry/platform/kvm"
 
 	// Compile filters for Systrap.
-	_ "gvisor.dev/gvisor/pkg/sentry/platform/systrap"
+	_ "github.com/metacubex/gvisor/pkg/sentry/platform/systrap"
 )
 
 // Variable names used in precompiled filters.

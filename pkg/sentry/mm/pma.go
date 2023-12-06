@@ -18,14 +18,14 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/safecopy"
-	"gvisor.dev/gvisor/pkg/safemem"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/safecopy"
+	"github.com/metacubex/gvisor/pkg/safemem"
+	"github.com/metacubex/gvisor/pkg/sentry/memmap"
+	"github.com/metacubex/gvisor/pkg/sentry/pgalloc"
+	"github.com/metacubex/gvisor/pkg/sentry/usage"
 )
 
 // existingPMAsLocked checks that pmas exist for all addresses in ar, and

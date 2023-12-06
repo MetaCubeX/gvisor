@@ -16,9 +16,9 @@ package config
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/sentry/socket/hostinet"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/hostinet"
 )
 
 // hostInetFilters contains syscalls that are needed by sentry/socket/hostinet.

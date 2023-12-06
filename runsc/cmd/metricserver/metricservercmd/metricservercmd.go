@@ -16,7 +16,7 @@
 package metricservercmd
 
 import (
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // Cmd partially implements subcommands.Command for the metric-server command.

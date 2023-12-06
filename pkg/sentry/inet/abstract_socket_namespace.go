@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/refs"
-	"gvisor.dev/gvisor/pkg/sentry/socket/unix/transport"
-	"gvisor.dev/gvisor/pkg/syserr"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/refs"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/unix/transport"
+	"github.com/metacubex/gvisor/pkg/syserr"
 )
 
 // +stateify savable

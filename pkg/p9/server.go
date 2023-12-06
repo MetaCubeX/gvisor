@@ -19,14 +19,14 @@ import (
 	"runtime/debug"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/fd"
-	"gvisor.dev/gvisor/pkg/fdchannel"
-	"gvisor.dev/gvisor/pkg/flipcall"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/unet"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/fd"
+	"github.com/metacubex/gvisor/pkg/fdchannel"
+	"github.com/metacubex/gvisor/pkg/flipcall"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/unet"
 )
 
 // Server is a 9p2000.L server.

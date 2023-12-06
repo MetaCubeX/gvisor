@@ -19,7 +19,7 @@ import (
 	"unsafe"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
 )
 
 // SleepOnState makes the caller sleep on the ThreadContext.State futex.

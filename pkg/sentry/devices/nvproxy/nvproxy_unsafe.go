@@ -20,7 +20,7 @@ import (
 	"unsafe"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
+	"github.com/metacubex/gvisor/pkg/abi/nvgpu"
 )
 
 // HostDriverVersion returns the version of the host Nvidia driver.

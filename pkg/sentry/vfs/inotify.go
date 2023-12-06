@@ -18,16 +18,16 @@ import (
 	"bytes"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/uniqueid"
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/usermem"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/uniqueid"
+	"github.com/metacubex/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/usermem"
+	"github.com/metacubex/gvisor/pkg/waiter"
 )
 
 // inotifyEventBaseSize is the base size of linux's struct inotify_event. This

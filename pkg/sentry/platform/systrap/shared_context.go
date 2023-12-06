@@ -22,10 +22,10 @@ import (
 	"time"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
-	"gvisor.dev/gvisor/pkg/sentry/platform/systrap/sysmsg"
-	"gvisor.dev/gvisor/pkg/syncevent"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/sentry/platform/systrap/sysmsg"
+	"github.com/metacubex/gvisor/pkg/syncevent"
 )
 
 const (

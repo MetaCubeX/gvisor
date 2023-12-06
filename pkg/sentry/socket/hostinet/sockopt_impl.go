@@ -18,8 +18,8 @@
 package hostinet
 
 import (
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
 )
 
 func extraSockOpts(t *kernel.Task) []SockOpt {

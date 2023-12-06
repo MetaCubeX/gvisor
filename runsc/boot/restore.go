@@ -18,14 +18,14 @@ import (
 	"fmt"
 	"os"
 
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/socket/netstack"
-	"gvisor.dev/gvisor/pkg/sentry/state"
-	"gvisor.dev/gvisor/pkg/sentry/time"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
-	"gvisor.dev/gvisor/pkg/sentry/watchdog"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/runsc/boot/pprof"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/netstack"
+	"github.com/metacubex/gvisor/pkg/sentry/state"
+	"github.com/metacubex/gvisor/pkg/sentry/time"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/sentry/watchdog"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/runsc/boot/pprof"
 )
 
 type restorer struct {

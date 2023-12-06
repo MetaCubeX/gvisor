@@ -21,10 +21,10 @@ import (
 
 	"github.com/google/subcommands"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/runsc/cmd/util"
-	"gvisor.dev/gvisor/runsc/config"
-	"gvisor.dev/gvisor/runsc/container"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/runsc/cmd/util"
+	"github.com/metacubex/gvisor/runsc/config"
+	"github.com/metacubex/gvisor/runsc/container"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 const (

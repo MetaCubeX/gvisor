@@ -18,15 +18,15 @@ package route
 import (
 	"bytes"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/sentry/inet"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/socket/netlink"
-	"gvisor.dev/gvisor/pkg/syserr"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/marshal/primitive"
+	"github.com/metacubex/gvisor/pkg/sentry/inet"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel/auth"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/netlink"
+	"github.com/metacubex/gvisor/pkg/syserr"
 )
 
 // commandKind describes the operational class of a message type.

@@ -29,14 +29,14 @@ import (
 	"os"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/gohacks"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/safemem"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/cleanup"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/gohacks"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/marshal"
+	"github.com/metacubex/gvisor/pkg/safemem"
 )
 
 const (

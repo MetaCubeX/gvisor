@@ -15,10 +15,10 @@
 package tmpfs
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/sentry/socket/unix/transport"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel/auth"
+	"github.com/metacubex/gvisor/pkg/sentry/socket/unix/transport"
 )
 
 // socketFile is a socket (=S_IFSOCK) tmpfs file.

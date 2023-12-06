@@ -17,10 +17,10 @@ package netfilter
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/marshal"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel/auth"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
 )
 
 const matcherNameOwner = "owner"
