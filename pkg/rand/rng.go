@@ -17,9 +17,10 @@
 package rand
 
 import (
-	"encoding/binary"
 	"fmt"
 	"io"
+
+	"github.com/metacubex/gvisor/pkg/binary"
 )
 
 // RNG exposes convenience functions based on a cryptographically secure

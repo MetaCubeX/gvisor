@@ -17,11 +17,11 @@
 package precompiledseccomp
 
 import (
-	"encoding/binary"
 	"fmt"
 	"sort"
 	"strings"
 
+	"github.com/metacubex/gvisor/pkg/binary"
 	"github.com/metacubex/gvisor/pkg/bpf"
 	"github.com/metacubex/gvisor/pkg/log"
 	"github.com/metacubex/gvisor/pkg/seccomp"
