@@ -150,7 +150,9 @@ func (cb *getdentsCallback) Handle(dirent vfs.Dirent) error {
 		// Zero out all remaining bytes in buf, including the NUL terminator
 		// after dirent.Name.
 		bufTail := buf[19+len(dirent.Name):]
-		clear(bufTail)
+		for i := range bufTail {
+			bufTail[i] = 0
+		}
 		cb.copied += size
 	} else {
 		// struct linux_dirent {
@@ -186,7 +188,9 @@ func (cb *getdentsCallback) Handle(dirent vfs.Dirent) error {
 		// after dirent.Name and the zero padding byte between the name and
 		// dirent type.
 		bufTail := buf[18+len(dirent.Name) : size-1]
-		clear(bufTail)
+		for i := range bufTail {
+			bufTail[i] = 0
+		}
 		buf[size-1] = dirent.Type
 		cb.copied += size
 	}
