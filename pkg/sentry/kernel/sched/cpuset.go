@@ -88,7 +88,9 @@ func (c *CPUSet) ClearAbove(cpu uint) {
 		return
 	}
 	(*c)[i] &^= 0xff << (cpu % bitsPerByte)
-	clear((*c)[i+1 : c.Size()])
+	for i++; i < c.Size(); i++ {
+		(*c)[i] = 0
+	}
 }
 
 // ForEachCPU iterates over the CPUSet and calls fn with the cpu index if

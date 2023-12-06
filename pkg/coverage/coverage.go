@@ -106,7 +106,9 @@ func ClearCoverageData() {
 	// which would drastically degrade performance. Slight discrepancies due to
 	// racing is okay for the purposes of kcov.
 	for _, counters := range coverdata.Counters {
-		clear(counters)
+		for index := 0; index < len(counters); index++ {
+			counters[index] = 0
+		}
 	}
 }
 
