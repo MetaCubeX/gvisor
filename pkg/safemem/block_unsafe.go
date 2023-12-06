@@ -221,7 +221,12 @@ func Zero(dst Block) (int, error) {
 	if !dst.needSafecopy {
 		bs := dst.ToSlice()
 		if !sync.RaceEnabled {
-			clear(bs)
+			// If the race detector isn't enabled, the golang
+			// compiler replaces the next loop with memclr
+			// (https://github.com/golang/go/issues/5373).
+			for i := range bs {
+				bs[i] = 0
+			}
 		} else {
 			bsLen := len(bs)
 			if bsLen == 0 {
