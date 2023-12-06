@@ -116,7 +116,9 @@ func (s *State) Fork() State {
 // Reset resets s to its initial state.
 func (s *State) Reset() {
 	f := *s
-	clear(f)
+	for i := range f {
+		f[i] = 0
+	}
 	initX86FPState(&f[0], cpuid.HostFeatureSet().UseXsave())
 }
 
@@ -275,7 +277,9 @@ func (s *State) SanitizeUser(featureSet cpuid.FeatureSet) {
 		hostarch.ByteOrder.PutUint64(f[xstateBVOffset:], xstateBV)
 		// Force XCOMP_BV and reserved bytes in the XSAVE header to 0.
 		reserved := f[xsaveHeaderZeroedOffset : xsaveHeaderZeroedOffset+xsaveHeaderZeroedBytes]
-		clear(reserved)
+		for i := range reserved {
+			reserved[i] = 0
+		}
 	}
 }
 

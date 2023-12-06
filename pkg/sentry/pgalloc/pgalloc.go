@@ -819,7 +819,9 @@ func (f *MemoryFile) Decommit(fr memmap.FileRange) error {
 
 func (f *MemoryFile) manuallyZero(fr memmap.FileRange) error {
 	return f.forEachMappingSlice(fr, func(bs []byte) {
-		clear(bs)
+		for i := range bs {
+			bs[i] = 0
+		}
 	})
 }
 

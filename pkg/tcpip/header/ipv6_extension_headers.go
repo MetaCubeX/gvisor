@@ -130,7 +130,9 @@ func padIPv6Option(b []byte) {
 		b[ipv6ExtHdrOptionTypeOffset] = uint8(ipv6Pad1ExtHdrOptionIdentifier)
 	default: // Pad with PadN.
 		s := b[ipv6ExtHdrOptionPayloadOffset:]
-		clear(s)
+		for i := range s {
+			s[i] = 0
+		}
 		b[ipv6ExtHdrOptionTypeOffset] = uint8(ipv6PadNExtHdrOptionIdentifier)
 		b[ipv6ExtHdrOptionLengthOffset] = uint8(len(s))
 	}
