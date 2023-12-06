@@ -174,7 +174,7 @@ func (r *runSyscallAfterExecStop) execute(t *Task) taskRunState {
 	for _, it := range t.tg.timers {
 		its = append(its, it)
 	}
-	clear(t.tg.timers)
+	t.tg.timers = make(map[linux.TimerID]*IntervalTimer)
 	t.tg.signalHandlers.mu.Unlock()
 	t.tg.pidns.owner.mu.Unlock()
 	for _, it := range its {
