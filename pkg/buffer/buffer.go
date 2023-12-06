@@ -189,9 +189,12 @@ func (b *Buffer) GrowTo(length int64, zero bool) {
 			sz = int(length - b.size)
 		}
 
-		// Zero the written section.
+		// Zero the written section; note that this pattern is
+		// specifically recognized and optimized by the compiler.
 		if zero {
-			clear(v.chunk.data[v.write : v.write+sz])
+			for i := v.write; i < v.write+sz; i++ {
+				v.chunk.data[i] = 0
+			}
 		}
 
 		// Advance the index.
