@@ -15,7 +15,7 @@
 package bpf
 
 import (
-	"encoding/binary"
+	"github.com/metacubex/gvisor/pkg/binary"
 )
 
 // Input represents a source of input data for a BPF program. (BPF

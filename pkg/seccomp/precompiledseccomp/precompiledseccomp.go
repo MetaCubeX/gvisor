@@ -17,11 +17,11 @@
 package precompiledseccomp
 
 import (
-	"encoding/binary"
 	"fmt"
 	"sort"
 	"strings"
 
+	"gvisor.dev/gvisor/pkg/binary"
 	"gvisor.dev/gvisor/pkg/bpf"
 	"gvisor.dev/gvisor/pkg/log"
 	"gvisor.dev/gvisor/pkg/seccomp"
