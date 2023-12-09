@@ -43,7 +43,6 @@ package fdbased
 import (
 	"fmt"
 
-	"golang.org/x/sys/unix"
 	"github.com/metacubex/gvisor/pkg/atomicbitops"
 	"github.com/metacubex/gvisor/pkg/buffer"
 	"github.com/metacubex/gvisor/pkg/sync"
@@ -51,6 +50,7 @@ import (
 	"github.com/metacubex/gvisor/pkg/tcpip/header"
 	"github.com/metacubex/gvisor/pkg/tcpip/link/rawfile"
 	"github.com/metacubex/gvisor/pkg/tcpip/stack"
+	"golang.org/x/sys/unix"
 )
 
 // linkDispatcher reads packets from the link FD and dispatches them to the
@@ -552,7 +552,7 @@ func (e *endpoint) writePacket(pkt stack.PacketBufferPtr) tcpip.Error {
 			vnetHdr.hdrLen = uint16(pkt.HeaderSize())
 			if pkt.GSOOptions.NeedsCsum {
 				vnetHdr.flags = _VIRTIO_NET_HDR_F_NEEDS_CSUM
-				vnetHdr.csumStart = header.EthernetMinimumSize + pkt.GSOOptions.L3HdrLen
+				vnetHdr.csumStart = pkt.GSOOptions.L3HdrLen
 				vnetHdr.csumOffset = pkt.GSOOptions.CsumOffset
 			}
 			if uint16(pkt.Data().Size()) > pkt.GSOOptions.MSS {
@@ -622,7 +622,7 @@ func (e *endpoint) sendBatch(batchFDInfo fdInfo, pkts []stack.PacketBufferPtr) (
 					vnetHdr.hdrLen = uint16(pkt.HeaderSize())
 					if pkt.GSOOptions.NeedsCsum {
 						vnetHdr.flags = _VIRTIO_NET_HDR_F_NEEDS_CSUM
-						vnetHdr.csumStart = header.EthernetMinimumSize + pkt.GSOOptions.L3HdrLen
+						vnetHdr.csumStart = pkt.GSOOptions.L3HdrLen
 						vnetHdr.csumOffset = pkt.GSOOptions.CsumOffset
 					}
 					if pkt.GSOOptions.Type != stack.GSONone && uint16(pkt.Data().Size()) > pkt.GSOOptions.MSS {
