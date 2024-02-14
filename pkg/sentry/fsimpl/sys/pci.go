@@ -21,11 +21,11 @@ import (
 	regex "regexp"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/fsutil"
-	"gvisor.dev/gvisor/pkg/sentry/fsimpl/kernfs"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/fsutil"
+	"github.com/metacubex/gvisor/pkg/sentry/fsimpl/kernfs"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel/auth"
 )
 
 const (

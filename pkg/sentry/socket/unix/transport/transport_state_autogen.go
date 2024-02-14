@@ -3,7 +3,7 @@
 package transport
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (e *connectionedEndpoint) StateTypeName() string {

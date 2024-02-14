@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // TunnelPinDir returns the directory to which eBPF objects will be pinned when

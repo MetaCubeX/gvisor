@@ -3,7 +3,7 @@
 package ports
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (f *Flags) StateTypeName() string {

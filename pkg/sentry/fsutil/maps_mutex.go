@@ -3,8 +3,8 @@ package fsutil
 import (
 	"reflect"
 
-	"gvisor.dev/gvisor/pkg/sync"
-	"gvisor.dev/gvisor/pkg/sync/locking"
+	"github.com/metacubex/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/sync/locking"
 )
 
 // Mutex is sync.Mutex with the correctness validator.

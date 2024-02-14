@@ -7,7 +7,7 @@
 package arch
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (s *State) StateTypeName() string {

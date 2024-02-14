@@ -17,8 +17,8 @@ package mm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/sentry/pgalloc"
 )
 
 // InvalidateUnsavable invokes memmap.Mappable.InvalidateUnsavable on all

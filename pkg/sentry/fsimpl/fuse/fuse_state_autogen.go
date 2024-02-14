@@ -3,7 +3,7 @@
 package fuse
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (conn *connection) StateTypeName() string {

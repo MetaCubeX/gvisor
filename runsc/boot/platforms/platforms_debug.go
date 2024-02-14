@@ -23,6 +23,6 @@ import (
 	// The KVM platform is not included because it's incompatible with debug
 	// builds. Unoptimized functions grow the stack too much and fail the nosplit
 	// check.
-	_ "gvisor.dev/gvisor/pkg/sentry/platform/ptrace"
-	_ "gvisor.dev/gvisor/pkg/sentry/platform/systrap"
+	_ "github.com/metacubex/gvisor/pkg/sentry/platform/ptrace"
+	_ "github.com/metacubex/gvisor/pkg/sentry/platform/systrap"
 )

@@ -28,7 +28,7 @@ import (
 	"github.com/cilium/ebpf"
 	"github.com/cilium/ebpf/link"
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // bpffsDirName is the path at which BPFFS is expected to be mounted.

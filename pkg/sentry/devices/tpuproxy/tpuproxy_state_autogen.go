@@ -3,7 +3,7 @@
 package tpuproxy
 
 import (
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (dev *vfioDevice) StateTypeName() string {
