@@ -22,12 +22,12 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/link/rawfile"
-	"gvisor.dev/gvisor/pkg/tcpip/link/stopfd"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/pkg/buffer"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/header"
+	"github.com/metacubex/gvisor/pkg/tcpip/link/rawfile"
+	"github.com/metacubex/gvisor/pkg/tcpip/link/stopfd"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
 )
 
 const (

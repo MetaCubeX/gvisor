@@ -16,10 +16,10 @@ package systrap
 
 import (
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/seccomp/precompiledseccomp"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
 )
 
 // sysmsgThreadPriorityVarName is the seccomp filter variable name used to

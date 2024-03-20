@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"os"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
-	"gvisor.dev/gvisor/pkg/sentry/kernel"
-	"gvisor.dev/gvisor/pkg/sentry/state"
-	"gvisor.dev/gvisor/pkg/sentry/strace"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel"
+	"github.com/metacubex/gvisor/pkg/sentry/state"
+	"github.com/metacubex/gvisor/pkg/sentry/strace"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // EnableAutosave enables auto save restore in syscall tests.

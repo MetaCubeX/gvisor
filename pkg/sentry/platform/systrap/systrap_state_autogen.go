@@ -8,7 +8,7 @@ package systrap
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (l *contextList) StateTypeName() string {

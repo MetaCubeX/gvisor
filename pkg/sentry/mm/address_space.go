@@ -17,10 +17,10 @@ package mm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/sentry/memmap"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/sentry/memmap"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
 )
 
 // AddressSpace returns the platform.AddressSpace bound to mm.

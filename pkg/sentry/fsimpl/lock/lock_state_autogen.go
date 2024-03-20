@@ -5,7 +5,7 @@ package lock
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (o *OwnerInfo) StateTypeName() string {

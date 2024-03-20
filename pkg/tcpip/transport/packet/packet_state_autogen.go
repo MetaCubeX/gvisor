@@ -5,7 +5,7 @@ package packet
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (p *packet) StateTypeName() string {

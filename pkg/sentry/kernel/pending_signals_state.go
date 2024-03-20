@@ -17,7 +17,7 @@ package kernel
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
 )
 
 // +stateify savable

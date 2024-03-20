@@ -5,7 +5,7 @@ package loader
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (v *VDSO) StateTypeName() string {

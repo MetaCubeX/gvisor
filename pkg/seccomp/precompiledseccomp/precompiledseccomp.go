@@ -21,10 +21,10 @@ import (
 	"sort"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/binary"
-	"gvisor.dev/gvisor/pkg/bpf"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/binary"
+	"github.com/metacubex/gvisor/pkg/bpf"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/seccomp"
 )
 
 // ProgramDesc describes a program to be compiled.

@@ -20,11 +20,11 @@ import (
 	"io"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/fdnotifier"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/safemem"
-	"gvisor.dev/gvisor/pkg/sentry/hostfd"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/fdnotifier"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/safemem"
+	"github.com/metacubex/gvisor/pkg/sentry/hostfd"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
 )
 
 // MakeRestoreID creates a RestoreID for a given application FD. The application

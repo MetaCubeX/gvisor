@@ -23,12 +23,12 @@ import (
 	"strings"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp"
-	"gvisor.dev/gvisor/pkg/sentry/devices/accel"
-	"gvisor.dev/gvisor/pkg/sentry/devices/nvproxy"
-	"gvisor.dev/gvisor/pkg/sentry/devices/tpuproxy"
-	"gvisor.dev/gvisor/pkg/sentry/platform"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/pkg/seccomp/precompiledseccomp"
+	"github.com/metacubex/gvisor/pkg/sentry/devices/accel"
+	"github.com/metacubex/gvisor/pkg/sentry/devices/nvproxy"
+	"github.com/metacubex/gvisor/pkg/sentry/devices/tpuproxy"
+	"github.com/metacubex/gvisor/pkg/sentry/platform"
 )
 
 // Options are seccomp filter related options.

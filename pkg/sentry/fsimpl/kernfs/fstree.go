@@ -1,8 +1,8 @@
 package kernfs
 
 import (
-	"gvisor.dev/gvisor/pkg/fspath"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/fspath"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
 )
 
 // We need to define an interface instead of using atomic.Pointer because

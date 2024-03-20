@@ -18,9 +18,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/bits"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/bits"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
 )
 
 // A CapabilitySet is a set of capabilities implemented as a bitset. The zero

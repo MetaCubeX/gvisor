@@ -5,7 +5,7 @@ package ip
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (e *ErrMessageTooLong) StateTypeName() string {

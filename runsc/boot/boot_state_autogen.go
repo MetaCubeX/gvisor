@@ -5,7 +5,7 @@ package boot
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (f *sandboxNetstackCreator) StateTypeName() string {

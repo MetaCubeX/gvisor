@@ -25,12 +25,12 @@ import (
 	"github.com/cilium/ebpf"
 	"github.com/google/subcommands"
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/buffer"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/link/sniffer"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/xdp"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/pkg/buffer"
+	"github.com/metacubex/gvisor/pkg/tcpip/header"
+	"github.com/metacubex/gvisor/pkg/tcpip/link/sniffer"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/pkg/xdp"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 //go:embed bpf/tcpdump_ebpf.o

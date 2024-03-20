@@ -5,7 +5,7 @@ package kernfs
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (l *dentryList) StateTypeName() string {

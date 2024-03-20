@@ -20,8 +20,8 @@ import (
 	"fmt"
 
 	"github.com/google/subcommands"
-	"gvisor.dev/gvisor/pkg/sentry/devices/nvproxy"
-	"gvisor.dev/gvisor/runsc/flag"
+	"github.com/metacubex/gvisor/pkg/sentry/devices/nvproxy"
+	"github.com/metacubex/gvisor/runsc/flag"
 )
 
 // listSupportedDrivers implements subcommands.Command for the "nvproxy list-supported-drivers" command.

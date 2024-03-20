@@ -29,8 +29,8 @@ import (
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
 	dbus "github.com/godbus/dbus/v5"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
-	"gvisor.dev/gvisor/pkg/cleanup"
-	"gvisor.dev/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/cleanup"
+	"github.com/metacubex/gvisor/pkg/log"
 )
 
 var (

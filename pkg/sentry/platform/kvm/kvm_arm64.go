@@ -20,9 +20,9 @@ package kvm
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/ring0"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/ring0"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
 )
 
 type kvmOneReg struct {

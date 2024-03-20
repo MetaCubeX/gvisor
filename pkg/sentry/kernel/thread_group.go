@@ -18,15 +18,15 @@ import (
 	goContext "context"
 	"sync/atomic"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/atomicbitops"
-	"gvisor.dev/gvisor/pkg/context"
-	"gvisor.dev/gvisor/pkg/errors/linuxerr"
-	"gvisor.dev/gvisor/pkg/sentry/kernel/auth"
-	ktime "gvisor.dev/gvisor/pkg/sentry/kernel/time"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
-	"gvisor.dev/gvisor/pkg/sentry/usage"
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/atomicbitops"
+	"github.com/metacubex/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/errors/linuxerr"
+	"github.com/metacubex/gvisor/pkg/sentry/kernel/auth"
+	ktime "github.com/metacubex/gvisor/pkg/sentry/kernel/time"
+	"github.com/metacubex/gvisor/pkg/sentry/limits"
+	"github.com/metacubex/gvisor/pkg/sentry/usage"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // A ThreadGroup is a logical grouping of tasks that has widespread

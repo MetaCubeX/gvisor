@@ -15,7 +15,7 @@
 package seccheck
 
 import (
-	"gvisor.dev/gvisor/pkg/abi/sentry"
+	"github.com/metacubex/gvisor/pkg/abi/sentry"
 )
 
 // SyscallType is an enum that denotes different types of syscall points. There

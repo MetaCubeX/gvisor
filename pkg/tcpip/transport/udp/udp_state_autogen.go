@@ -5,7 +5,7 @@ package udp
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (p *udpPacket) StateTypeName() string {

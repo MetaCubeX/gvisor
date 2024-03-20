@@ -18,8 +18,8 @@ import (
 	goContext "context"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/nvgpu"
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/abi/nvgpu"
+	"github.com/metacubex/gvisor/pkg/context"
 )
 
 func (n *nvproxy) beforeSave() {

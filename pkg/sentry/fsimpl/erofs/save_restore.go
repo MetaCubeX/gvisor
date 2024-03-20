@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"os"
 
-	"gvisor.dev/gvisor/pkg/erofs"
-	"gvisor.dev/gvisor/pkg/sentry/vfs"
+	"github.com/metacubex/gvisor/pkg/erofs"
+	"github.com/metacubex/gvisor/pkg/sentry/vfs"
 )
 
 // afterLoad is called by stateify.

@@ -22,12 +22,12 @@ import (
 	"fmt"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/hostarch"
-	"gvisor.dev/gvisor/pkg/marshal"
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
-	"gvisor.dev/gvisor/pkg/rand"
-	"gvisor.dev/gvisor/pkg/sentry/arch/fpu"
-	"gvisor.dev/gvisor/pkg/sentry/limits"
+	"github.com/metacubex/gvisor/pkg/hostarch"
+	"github.com/metacubex/gvisor/pkg/marshal"
+	"github.com/metacubex/gvisor/pkg/marshal/primitive"
+	"github.com/metacubex/gvisor/pkg/rand"
+	"github.com/metacubex/gvisor/pkg/sentry/arch/fpu"
+	"github.com/metacubex/gvisor/pkg/sentry/limits"
 )
 
 // Host specifies the host architecture.

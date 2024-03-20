@@ -17,7 +17,7 @@ package overlay
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/refs"
+	"github.com/metacubex/gvisor/pkg/refs"
 )
 
 func (d *dentry) afterLoad(context.Context) {

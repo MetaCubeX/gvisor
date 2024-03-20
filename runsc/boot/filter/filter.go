@@ -19,10 +19,10 @@ package filter
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
-	"gvisor.dev/gvisor/pkg/log"
-	"gvisor.dev/gvisor/pkg/seccomp"
-	"gvisor.dev/gvisor/runsc/boot/filter/config"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/log"
+	"github.com/metacubex/gvisor/pkg/seccomp"
+	"github.com/metacubex/gvisor/runsc/boot/filter/config"
 )
 
 // ***   DEBUG TIP   ***

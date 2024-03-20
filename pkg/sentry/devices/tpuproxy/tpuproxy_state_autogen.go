@@ -5,7 +5,7 @@ package tpuproxy
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (dev *tpuDevice) StateTypeName() string {

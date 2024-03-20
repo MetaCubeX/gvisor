@@ -25,7 +25,7 @@ import (
 	"unsafe"
 
 	"golang.org/x/sys/unix"
-	"gvisor.dev/gvisor/pkg/sentry/arch"
+	"github.com/metacubex/gvisor/pkg/sentry/arch"
 )
 
 //go:linkname throw runtime.throw

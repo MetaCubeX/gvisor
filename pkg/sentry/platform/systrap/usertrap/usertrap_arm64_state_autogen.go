@@ -8,7 +8,7 @@ package usertrap
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (s *State) StateTypeName() string {

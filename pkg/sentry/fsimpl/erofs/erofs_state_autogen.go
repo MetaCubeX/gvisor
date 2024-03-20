@@ -5,7 +5,7 @@ package erofs
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (r *dentryRefs) StateTypeName() string {

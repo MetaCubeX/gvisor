@@ -5,7 +5,7 @@ package pipefs
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (f *filesystemType) StateTypeName() string {

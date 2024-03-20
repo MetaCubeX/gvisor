@@ -5,7 +5,7 @@ package mqfs
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (ft *FilesystemType) StateTypeName() string {

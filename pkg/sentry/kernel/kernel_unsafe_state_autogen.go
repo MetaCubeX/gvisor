@@ -5,7 +5,7 @@ package kernel
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (p *descriptorBucketSliceAtomicPtr) StateTypeName() string {

@@ -5,7 +5,7 @@ package ttydev
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (t *ttyDevice) StateTypeName() string {

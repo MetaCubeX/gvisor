@@ -21,7 +21,7 @@ package seccomp
 import (
 	"sort"
 
-	"gvisor.dev/gvisor/pkg/abi/linux"
+	"github.com/metacubex/gvisor/pkg/abi/linux"
 )
 
 // UsefulTestCases returns a best-effort list of test cases that may be

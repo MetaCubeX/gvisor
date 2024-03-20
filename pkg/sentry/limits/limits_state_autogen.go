@@ -5,7 +5,7 @@ package limits
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (l *Limit) StateTypeName() string {

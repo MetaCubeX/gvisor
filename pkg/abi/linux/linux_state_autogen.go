@@ -5,7 +5,7 @@ package linux
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (i *IOEvent) StateTypeName() string {

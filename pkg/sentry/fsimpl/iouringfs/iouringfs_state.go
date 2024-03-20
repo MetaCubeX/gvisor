@@ -17,7 +17,7 @@ package iouringfs
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/sentry/pgalloc"
+	"github.com/metacubex/gvisor/pkg/sentry/pgalloc"
 )
 
 // beforeSave is invoked by stateify.

@@ -17,7 +17,7 @@ package vfs
 import (
 	goContext "context"
 
-	"gvisor.dev/gvisor/pkg/context"
+	"github.com/metacubex/gvisor/pkg/context"
 )
 
 // contextID is this package's type for context.Context.Value keys.
