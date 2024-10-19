@@ -744,6 +744,7 @@ func (s *Stack) SetRouteTable(table []tcpip.Route) {
 	defer s.routeMu.Unlock()
 	s.routeTable.Reset()
 	for _, r := range table {
+		r := r
 		s.addRouteLocked(&r)
 	}
 }
