@@ -22,6 +22,7 @@ import (
 	"math"
 
 	"gvisor.dev/gvisor/pkg/buffer"
+	"gvisor.dev/gvisor/pkg/common"
 	"gvisor.dev/gvisor/pkg/tcpip"
 )
 
@@ -130,7 +131,7 @@ func padIPv6Option(b []byte) {
 		b[ipv6ExtHdrOptionTypeOffset] = uint8(ipv6Pad1ExtHdrOptionIdentifier)
 	default: // Pad with PadN.
 		s := b[ipv6ExtHdrOptionPayloadOffset:]
-		clear(s)
+		common.ClearArray(s)
 		b[ipv6ExtHdrOptionTypeOffset] = uint8(ipv6PadNExtHdrOptionIdentifier)
 		b[ipv6ExtHdrOptionLengthOffset] = uint8(len(s))
 	}

@@ -19,6 +19,7 @@ import (
 	"fmt"
 	"time"
 
+	"gvisor.dev/gvisor/pkg/common"
 	"gvisor.dev/gvisor/pkg/tcpip"
 	"gvisor.dev/gvisor/pkg/tcpip/checksum"
 )
@@ -1152,7 +1153,7 @@ func (s IPv4OptionsSerializer) Serialize(b []byte) uint8 {
 	//  header ends on a 32 bit boundary. The padding is zero.
 	padded := padIPv4OptionsLength(total)
 	b = b[:padded-total]
-	clear(b)
+	common.ClearArray(b)
 	return padded
 }
 

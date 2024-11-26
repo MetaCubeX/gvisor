@@ -18,6 +18,7 @@ import (
 	"math"
 	"time"
 
+	"gvisor.dev/gvisor/pkg/common"
 	"gvisor.dev/gvisor/pkg/tcpip"
 	"gvisor.dev/gvisor/pkg/tcpip/stack"
 )
@@ -136,14 +137,14 @@ func (c *cubicState) updateHyStart(rtt time.Duration) {
 	}
 
 	// Delay increase
-	c.CurrRTT = min(c.CurrRTT, rtt)
+	c.CurrRTT = common.Min(c.CurrRTT, rtt)
 	c.SampleCount++
 
 	if c.SampleCount >= nRTTSample && c.LastRTT < effectivelyInfinity {
 		// i.e. LastRTT/minRTTDivisor, but clamped to minRTTThresh & maxRTTThresh
-		thresh := max(
+		thresh := common.Max(
 			minRTTThresh,
-			min(maxRTTThresh, c.LastRTT/minRTTDivisor),
+			common.Min(maxRTTThresh, c.LastRTT/minRTTDivisor),
 		)
 		if c.CurrRTT >= (c.LastRTT + thresh) {
 			// Triggered HyStart safe exit threshold
