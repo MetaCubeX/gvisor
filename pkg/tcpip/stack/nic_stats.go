@@ -15,7 +15,7 @@
 package stack
 
 import (
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 // +stateify savable

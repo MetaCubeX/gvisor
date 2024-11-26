@@ -19,9 +19,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/header"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
 )
 
 // TODO(b/256037250): Enable by default.

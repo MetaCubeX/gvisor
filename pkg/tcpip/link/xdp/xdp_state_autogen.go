@@ -8,7 +8,7 @@ package xdp
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (ep *endpoint) StateTypeName() string {

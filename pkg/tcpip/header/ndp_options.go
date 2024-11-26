@@ -23,8 +23,8 @@ import (
 	"math"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/common"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 // ndpOptionIdentifier is an NDP option type identifier.

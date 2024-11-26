@@ -16,12 +16,12 @@
 package udp
 
 import (
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/header"
-	"gvisor.dev/gvisor/pkg/tcpip/header/parse"
-	"gvisor.dev/gvisor/pkg/tcpip/stack"
-	"gvisor.dev/gvisor/pkg/tcpip/transport/raw"
-	"gvisor.dev/gvisor/pkg/waiter"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/header"
+	"github.com/metacubex/gvisor/pkg/tcpip/header/parse"
+	"github.com/metacubex/gvisor/pkg/tcpip/stack"
+	"github.com/metacubex/gvisor/pkg/tcpip/transport/raw"
+	"github.com/metacubex/gvisor/pkg/waiter"
 )
 
 const (
