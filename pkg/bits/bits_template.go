@@ -14,7 +14,7 @@
 
 package bits
 
-import "golang.org/x/exp/constraints"
+import "gvisor.dev/gvisor/pkg/common/x/constraints"
 
 // Non-atomic bit operations on integral types.
 

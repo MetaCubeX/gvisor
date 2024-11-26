@@ -17,6 +17,7 @@ package linux
 import (
 	"structs"
 
+	"gvisor.dev/gvisor/pkg/common"
 	"gvisor.dev/gvisor/pkg/marshal"
 )
 
@@ -288,7 +289,7 @@ type BPFAttrProgAttach struct {
 // the sub-command attribute structures.
 //
 // BPF_ATTR_SIZE is immutable.
-var BPF_ATTR_SIZE = max((*BPFAttrProgLoad)(nil).SizeBytes(), (*BPFAttrProgQuery)(nil).SizeBytes(), (*BPFAttrProgAttach)(nil).SizeBytes())
+var BPF_ATTR_SIZE = common.Max((*BPFAttrProgLoad)(nil).SizeBytes(), common.Max((*BPFAttrProgQuery)(nil).SizeBytes(), (*BPFAttrProgAttach)(nil).SizeBytes()))
 
 // eBPF-related flags
 const (

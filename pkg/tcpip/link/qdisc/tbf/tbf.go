@@ -22,6 +22,7 @@ import (
 	"time"
 
 	"gvisor.dev/gvisor/pkg/atomicbitops"
+	"gvisor.dev/gvisor/pkg/common"
 	"gvisor.dev/gvisor/pkg/sleep"
 	"gvisor.dev/gvisor/pkg/sync"
 	"gvisor.dev/gvisor/pkg/tcpip"
@@ -107,7 +108,7 @@ func (d *discipline) dispatchLoop() {
 		for pkt := d.queue.PeekFront(); pkt != nil; pkt = d.queue.PeekFront() {
 			pktLen := pkt.Size()
 			now := d.clock.NowMonotonic()
-			toks := min(now.Sub(d.timeCheckpoint).Nanoseconds(), d.buffer)
+			toks := common.Min(now.Sub(d.timeCheckpoint).Nanoseconds(), d.buffer)
 			toks += d.tokens
 			if toks > d.buffer {
 				toks = d.buffer

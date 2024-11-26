@@ -16,6 +16,8 @@ package linux
 
 import (
 	"structs"
+
+	"gvisor.dev/gvisor/pkg/common"
 )
 
 const (
@@ -63,7 +65,7 @@ func (ifr *IFReq) Name() string {
 // SetName sets the name.
 func (ifr *IFReq) SetName(name string) {
 	n := copy(ifr.IFName[:], []byte(name))
-	clear(ifr.IFName[n:])
+	common.ClearArray(ifr.IFName[n:])
 }
 
 // SizeOfIFReq is the binary size of an IFReq struct (40 bytes).
