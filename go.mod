@@ -1,6 +1,6 @@
 module gvisor.dev/gvisor
 
-go 1.24.1
+go 1.20
 
 require (
 	github.com/google/btree v1.1.2
