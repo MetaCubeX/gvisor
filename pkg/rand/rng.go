@@ -39,7 +39,8 @@ func (rg *RNG) Uint16() uint16 {
 	if _, err := rg.Reader.Read(data[:]); err != nil {
 		panic(fmt.Sprintf("Read() failed: %v", err))
 	}
-	return binary.NativeEndian.Uint16(data[:])
+	// The endianness doesn't matter here as it's random bytes either way.
+	return binary.LittleEndian.Uint16(data[:])
 }
 
 // Uint32 is analogous to the standard library's math/rand.Uint32.
@@ -48,7 +49,8 @@ func (rg *RNG) Uint32() uint32 {
 	if _, err := rg.Reader.Read(data[:]); err != nil {
 		panic(fmt.Sprintf("Read() failed: %v", err))
 	}
-	return binary.NativeEndian.Uint32(data[:])
+	// The endianness doesn't matter here as it's random bytes either way.
+	return binary.LittleEndian.Uint32(data[:])
 }
 
 // Int63n is analogous to the standard library's math/rand.Int63n.
@@ -103,7 +105,8 @@ func (rg *RNG) Uint64() uint64 {
 	if _, err := rg.Reader.Read(data[:]); err != nil {
 		panic(fmt.Sprintf("Read() failed: %v", err))
 	}
-	return binary.NativeEndian.Uint64(data[:])
+	// The endianness doesn't matter here as it's random bytes either way.
+	return binary.LittleEndian.Uint64(data[:])
 }
 
 // Uint32 is analogous to the standard library's math/rand.Uint32.
