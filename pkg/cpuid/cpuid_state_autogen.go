@@ -5,7 +5,7 @@ package cpuid
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (h *hwCap) StateTypeName() string {

@@ -17,7 +17,7 @@ package tun
 import (
 	"encoding/binary"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 const (

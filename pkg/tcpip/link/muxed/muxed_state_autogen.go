@@ -5,7 +5,7 @@ package muxed
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (m *InjectableEndpoint) StateTypeName() string {

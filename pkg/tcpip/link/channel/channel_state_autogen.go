@@ -5,7 +5,7 @@ package channel
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (n *NotificationHandle) StateTypeName() string {

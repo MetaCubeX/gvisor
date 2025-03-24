@@ -8,7 +8,7 @@ package stopfd
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (sf *StopFD) StateTypeName() string {

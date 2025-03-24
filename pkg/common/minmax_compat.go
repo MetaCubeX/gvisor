@@ -2,7 +2,7 @@
 
 package common
 
-import "gvisor.dev/gvisor/pkg/common/x/constraints"
+import "github.com/metacubex/gvisor/pkg/common/x/constraints"
 
 func Min[T constraints.Ordered](x, y T) T {
 	if x < y {

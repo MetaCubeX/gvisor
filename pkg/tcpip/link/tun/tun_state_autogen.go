@@ -5,7 +5,7 @@ package tun
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/state"
+	"github.com/metacubex/gvisor/pkg/state"
 )
 
 func (d *Device) StateTypeName() string {
