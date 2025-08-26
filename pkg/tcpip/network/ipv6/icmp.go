@@ -654,6 +654,14 @@ func (e *endpoint) handleICMP(pkt *stack.PacketBuffer, hasFragmentHeader bool, r
 
 	case header.ICMPv6EchoRequest:
 		received.echoRequest.Increment()
+		if e.nic.DisableAutoICMPReplay() {
+			if len(h) < header.ICMPv6EchoMinimumSize {
+				received.invalid.Increment()
+				return
+			}
+			e.dispatcher.DeliverTransportPacket(header.ICMPv6ProtocolNumber, pkt)
+			break
+		}
 		// As per RFC 4291 section 2.7, multicast addresses must not be used as
 		// source addresses in IPv6 packets.
 		localAddr := dstAddr

@@ -344,6 +344,10 @@ func (e *endpoint) handleICMP(pkt *stack.PacketBuffer) {
 	switch h.Type() {
 	case header.ICMPv4Echo:
 		received.echoRequest.Increment()
+		if e.nic.DisableAutoICMPReplay() {
+			e.dispatcher.DeliverTransportPacket(header.ICMPv4ProtocolNumber, pkt)
+			break
+		}
 
 		// DeliverTransportPacket may modify pkt so don't use it beyond
 		// this point. Make a deep copy of the data before pkt gets sent as we will
