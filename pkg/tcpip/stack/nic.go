@@ -94,6 +94,8 @@ type nic struct {
 	// experimentIPOptionEnabled indicates whether the NIC supports the
 	// experiment IP option.
 	experimentIPOptionEnabled bool
+
+	disableAutoICMPReplay bool
 }
 
 // makeNICStats initializes the NIC statistics and associates them to the global
@@ -193,6 +195,7 @@ func newNIC(stack *Stack, id tcpip.NICID, ep LinkEndpoint, opts NICOptions) *nic
 		qDisc:                     qDisc,
 		deliverLinkPackets:        opts.DeliverLinkPackets,
 		experimentIPOptionEnabled: opts.EnableExperimentIPOption,
+		disableAutoICMPReplay:     opts.DisableAutoICMPReplay,
 	}
 	nic.linkResQueue.init(nic)
 
@@ -224,6 +227,10 @@ func newNIC(stack *Stack, id tcpip.NICID, ep LinkEndpoint, opts NICOptions) *nic
 	nic.NetworkLinkEndpoint.Attach(nic)
 
 	return nic
+}
+
+func (n *nic) DisableAutoICMPReplay() bool {
+	return n.disableAutoICMPReplay
 }
 
 func (n *nic) getNetworkEndpoint(proto tcpip.NetworkProtocolNumber) NetworkEndpoint {

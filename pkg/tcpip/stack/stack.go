@@ -883,6 +883,8 @@ type NICOptions struct {
 	// EnableExperimentIPOption specifies whether the NIC is responsible for
 	// passing the experiment IP option.
 	EnableExperimentIPOption bool
+
+	DisableAutoICMPReplay bool
 }
 
 // GetNICByID return a network device associated with the specified ID.
