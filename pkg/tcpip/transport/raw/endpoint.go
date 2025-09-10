@@ -702,6 +702,17 @@ func (e *endpoint) HandlePacket(pkt *stack.PacketBuffer) {
 				}
 			}
 
+			if e.ops.GetHeaderIncluded() {
+				networkHeader := pkt.NetworkHeader().Slice()
+				headers := buffer.NewView(len(networkHeader) + len(transportHeader))
+				headers.Write(networkHeader)
+				headers.Write(transportHeader)
+				combinedBuf = buffer.MakeWithView(headers)
+				pktBuf := pkt.Data().ToBuffer()
+				combinedBuf.Merge(&pktBuf)
+				break
+			}
+
 			combinedBuf = buffer.MakeWithView(pkt.TransportHeader().View())
 			pktBuf := pkt.Data().ToBuffer()
 			combinedBuf.Merge(&pktBuf)
