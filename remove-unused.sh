@@ -24,7 +24,8 @@ function remove_unused() {
       pkg/devutil \
       pkg/safemem \
       pkg/usermem \
-      pkg/tcpip/nftables
+      pkg/tcpip/nftables \
+      pkg/timing
 }
 
 remove_unused
