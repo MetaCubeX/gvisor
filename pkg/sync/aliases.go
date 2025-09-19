@@ -7,7 +7,7 @@
 package sync
 
 import (
-	"gvisor.dev/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/common"
 	"sync"
 )
 

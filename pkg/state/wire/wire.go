@@ -32,7 +32,7 @@ import (
 	"io"
 	"math"
 
-	"gvisor.dev/gvisor/pkg/gohacks"
+	"github.com/metacubex/gvisor/pkg/gohacks"
 )
 
 // Reader bundles an io.Reader with a buffer used to implement readByte

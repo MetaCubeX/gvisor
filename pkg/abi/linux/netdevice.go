@@ -14,7 +14,7 @@
 
 package linux
 
-import "gvisor.dev/gvisor/pkg/common"
+import "github.com/metacubex/gvisor/pkg/common"
 
 const (
 	// IFNAMSIZ is the size of the name field for IFReq.
