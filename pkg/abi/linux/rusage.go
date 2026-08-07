@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // Flags that may be used with wait4(2) and getrusage(2).

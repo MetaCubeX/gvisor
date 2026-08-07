@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 	"time"
 
 	"gvisor.dev/gvisor/pkg/marshal/primitive"

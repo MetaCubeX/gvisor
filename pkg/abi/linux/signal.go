@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 
 	"gvisor.dev/gvisor/pkg/bits"
 	"gvisor.dev/gvisor/pkg/hostarch"

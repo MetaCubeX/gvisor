@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // Control commands used with semctl, shmctl, and msgctl.

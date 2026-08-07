@@ -15,8 +15,8 @@
 package linux
 
 import (
+	"gvisor.dev/gvisor/pkg/common/structs"
 	"math"
-	"structs"
 )
 
 // shmat(2) flags. Source: include/uapi/linux/shm.h

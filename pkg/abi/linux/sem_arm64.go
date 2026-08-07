@@ -18,7 +18,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // SemidDS is equivalent to struct semid64_ds.

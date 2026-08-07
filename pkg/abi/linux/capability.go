@@ -15,8 +15,8 @@
 package linux
 
 import (
+	"gvisor.dev/gvisor/pkg/common/structs"
 	"strings"
-	"structs"
 )
 
 // A Capability represents the ability to perform a privileged operation.

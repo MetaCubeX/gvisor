@@ -17,7 +17,7 @@ package linux
 import (
 	"bytes"
 	"fmt"
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 const (

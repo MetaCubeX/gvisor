@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // Constants for io_uring_setup(2). See include/uapi/linux/io_uring.h.

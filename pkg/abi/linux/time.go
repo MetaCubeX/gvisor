@@ -15,8 +15,8 @@
 package linux
 
 import (
+	"gvisor.dev/gvisor/pkg/common/structs"
 	"math"
-	"structs"
 	"time"
 )
 

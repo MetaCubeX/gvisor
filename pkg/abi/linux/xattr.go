@@ -16,7 +16,7 @@ package linux
 
 import (
 	"encoding/binary"
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // Constants for extended attributes.

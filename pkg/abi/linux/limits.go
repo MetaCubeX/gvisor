@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // Resources for getrlimit(2)/setrlimit(2)/prlimit(2).

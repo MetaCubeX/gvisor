@@ -17,7 +17,7 @@ package gasket
 
 import (
 	"fmt"
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 
 	"gvisor.dev/gvisor/pkg/abi/linux"
 )

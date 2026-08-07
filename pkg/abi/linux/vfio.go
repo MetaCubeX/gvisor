@@ -17,7 +17,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // For IOCTLs requests from include/uapi/linux/vfio.h.

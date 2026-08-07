@@ -14,7 +14,7 @@
 
 package linux
 
-import "structs"
+import "gvisor.dev/gvisor/pkg/common/structs"
 
 // Scheduling policies, exposed by sched_getscheduler(2)/sched_setscheduler(2).
 const (

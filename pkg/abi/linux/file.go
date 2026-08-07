@@ -16,8 +16,8 @@ package linux
 
 import (
 	"fmt"
+	"gvisor.dev/gvisor/pkg/common/structs"
 	"strings"
-	"structs"
 
 	"gvisor.dev/gvisor/pkg/abi"
 )

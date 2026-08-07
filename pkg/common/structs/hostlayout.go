@@ -1,4 +1,4 @@
-// Copyright 2020 The gVisor Authors.
+// Copyright 2026 The gVisor Authors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,28 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:build amd64
-// +build amd64
+//go:build go1.23
 
-package linux
+// Package structs provides compatibility with the standard structs package.
+package structs
 
-import (
-	"gvisor.dev/gvisor/pkg/common/structs"
-)
+import "structs"
 
-// SemidDS is equivalent to struct semid64_ds.
-//
-// Source: arch/x86/include/uapi/asm/sembuf.h
-//
-// +marshal
-type SemidDS struct {
-	_        structs.HostLayout
-	SemPerm  IPCPerm
-	SemOTime TimeT
-	unused1  uint64
-	SemCTime TimeT
-	unused2  uint64
-	SemNSems uint64
-	unused3  uint64
-	unused4  uint64
-}
+// HostLayout marks a struct as using host memory layout.
+type HostLayout = structs.HostLayout

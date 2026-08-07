@@ -17,7 +17,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // NumSoftIRQ is the number of software IRQs, exposed via /proc/stat.

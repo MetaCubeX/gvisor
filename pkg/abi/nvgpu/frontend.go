@@ -15,7 +15,7 @@
 package nvgpu
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 
 	"gvisor.dev/gvisor/pkg/marshal"
 )

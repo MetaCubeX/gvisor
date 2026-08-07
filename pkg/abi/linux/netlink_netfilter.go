@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"structs"
+	"gvisor.dev/gvisor/pkg/common/structs"
 )
 
 // Group describes Netlink Netfilter groups, from uapi/linux/netfilter/nfnetlink.h.
