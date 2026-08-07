@@ -15,10 +15,10 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 
-	"gvisor.dev/gvisor/pkg/common"
-	"gvisor.dev/gvisor/pkg/marshal"
+	"github.com/metacubex/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/marshal"
 )
 
 // EBPFInstruction is the userspace representation of an eBPF instruction that has not

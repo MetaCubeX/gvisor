@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // PollFD is struct pollfd, used by poll(2)/ppoll(2), from uapi/asm-generic/poll.h.

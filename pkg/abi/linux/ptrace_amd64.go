@@ -18,7 +18,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // PtraceRegs is the set of CPU registers exposed by ptrace. Source:

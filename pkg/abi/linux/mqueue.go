@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // Default values for POSIX message queues. Source:

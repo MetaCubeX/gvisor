@@ -15,10 +15,10 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
+	"github.com/metacubex/gvisor/pkg/marshal/primitive"
 )
 
 // FUSEOpcode is a FUSE operation code.

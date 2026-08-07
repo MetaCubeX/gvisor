@@ -16,7 +16,7 @@ package linux
 
 import (
 	"fmt"
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // Seccomp constants taken from <linux/seccomp.h>.

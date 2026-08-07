@@ -17,7 +17,7 @@ package linux
 import (
 	"bytes"
 	"fmt"
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 const (

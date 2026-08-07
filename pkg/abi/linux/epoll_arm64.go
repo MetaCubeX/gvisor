@@ -18,7 +18,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // EpollEvent is equivalent to struct epoll_event from epoll(2).

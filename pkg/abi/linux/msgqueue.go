@@ -15,9 +15,9 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 
-	"gvisor.dev/gvisor/pkg/marshal/primitive"
+	"github.com/metacubex/gvisor/pkg/marshal/primitive"
 )
 
 // Linux-specific control commands. Source: include/uapi/linux/msg.h

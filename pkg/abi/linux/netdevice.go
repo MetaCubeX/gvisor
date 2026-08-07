@@ -15,9 +15,9 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 
-	"gvisor.dev/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/common"
 )
 
 const (

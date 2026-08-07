@@ -17,9 +17,9 @@ package header
 import (
 	"encoding/binary"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/checksum"
-	"gvisor.dev/gvisor/pkg/tcpip/seqnum"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/checksum"
+	"github.com/metacubex/gvisor/pkg/tcpip/seqnum"
 )
 
 // These constants are the offsets of the respective fields in the TCP header.

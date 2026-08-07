@@ -18,8 +18,8 @@ import (
 	"math"
 	"time"
 
-	"gvisor.dev/gvisor/pkg/common"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 // effectivelyInfinity is an initialization value used for round-trip times

@@ -17,7 +17,7 @@ package tcp
 import (
 	"time"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 // renoState stores the variables related to TCP New Reno congestion

@@ -1,4 +1,4 @@
-module gvisor.dev/gvisor
+module github.com/metacubex/gvisor
 
 go 1.20
 

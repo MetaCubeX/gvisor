@@ -17,8 +17,8 @@ package stack
 import (
 	"fmt"
 
-	"gvisor.dev/gvisor/pkg/common"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 // NeighborCacheSize is the size of the neighborCache. Exceeding this size will

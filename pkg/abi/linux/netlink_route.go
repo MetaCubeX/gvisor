@@ -15,7 +15,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // Netlink message types for NETLINK_ROUTE sockets, from uapi/linux/rtnetlink.h.

@@ -18,7 +18,7 @@ package nvgpu
 
 import (
 	"fmt"
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // Device numbers.

@@ -15,9 +15,9 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 
-	"gvisor.dev/gvisor/pkg/marshal"
+	"github.com/metacubex/gvisor/pkg/marshal"
 )
 
 // Socket error origin codes as defined in include/uapi/linux/errqueue.h.

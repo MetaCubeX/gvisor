@@ -14,7 +14,7 @@
 
 package bits
 
-import "gvisor.dev/gvisor/pkg/common/x/constraints"
+import "github.com/metacubex/gvisor/pkg/common/x/constraints"
 
 // Non-atomic bit operations on integral types.
 

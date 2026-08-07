@@ -16,7 +16,7 @@ package nvgpu
 
 import (
 	"fmt"
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // ClassID is a client class ID, in the sense of

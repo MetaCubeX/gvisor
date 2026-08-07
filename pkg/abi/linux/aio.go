@@ -16,7 +16,7 @@ package linux
 
 import (
 	"encoding/binary"
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // AIORing is struct aio_ring, from fs/aio.c, without the trailing

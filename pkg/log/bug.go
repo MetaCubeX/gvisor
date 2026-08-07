@@ -19,7 +19,7 @@ import (
 	"runtime"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/sync"
+	"github.com/metacubex/gvisor/pkg/sync"
 )
 
 // This file contains helper functions analogous to the Linux kernel's WARN*

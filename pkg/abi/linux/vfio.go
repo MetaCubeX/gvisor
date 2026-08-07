@@ -17,7 +17,7 @@
 package linux
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // For IOCTLs requests from include/uapi/linux/vfio.h.

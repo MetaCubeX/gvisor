@@ -20,7 +20,7 @@ package cpuid
 import (
 	"context"
 
-	"gvisor.dev/gvisor/pkg/common"
+	"github.com/metacubex/gvisor/pkg/common"
 )
 
 // Static is a static CPUID function.

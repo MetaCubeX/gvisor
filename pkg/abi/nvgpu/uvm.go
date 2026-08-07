@@ -15,7 +15,7 @@
 package nvgpu
 
 import (
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 )
 
 // UVM ioctl commands.

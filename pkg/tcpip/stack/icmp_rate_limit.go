@@ -18,7 +18,7 @@ import (
 	"context"
 
 	"golang.org/x/time/rate"
-	"gvisor.dev/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip"
 )
 
 const (

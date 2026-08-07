@@ -16,10 +16,10 @@ package linux
 
 import (
 	"fmt"
-	"gvisor.dev/gvisor/pkg/common/structs"
+	"github.com/metacubex/gvisor/pkg/common/structs"
 	"strings"
 
-	"gvisor.dev/gvisor/pkg/abi"
+	"github.com/metacubex/gvisor/pkg/abi"
 )
 
 // Constants for open(2).

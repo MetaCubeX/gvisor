@@ -17,8 +17,8 @@ package header
 import (
 	"encoding/binary"
 
-	"gvisor.dev/gvisor/pkg/tcpip"
-	"gvisor.dev/gvisor/pkg/tcpip/checksum"
+	"github.com/metacubex/gvisor/pkg/tcpip"
+	"github.com/metacubex/gvisor/pkg/tcpip/checksum"
 )
 
 // ICMPv4 represents an ICMPv4 header stored in a byte array.
