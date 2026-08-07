@@ -92,5 +92,5 @@ func neighborCacheinitLockNames() {}
 
 func init() {
 	neighborCacheinitLockNames()
-	neighborCacheprefixIndex = locking.NewMutexClass(reflect.TypeFor[neighborCacheRWMutex](), neighborCachelockNames)
+	neighborCacheprefixIndex = locking.NewMutexClass(reflect.TypeOf((*neighborCacheRWMutex)(nil)).Elem(), neighborCachelockNames)
 }

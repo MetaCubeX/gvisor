@@ -60,5 +60,5 @@ func endpointinitLockNames() {}
 
 func init() {
 	endpointinitLockNames()
-	endpointprefixIndex = locking.NewMutexClass(reflect.TypeFor[endpointMutex](), endpointlockNames)
+	endpointprefixIndex = locking.NewMutexClass(reflect.TypeOf((*endpointMutex)(nil)).Elem(), endpointlockNames)
 }

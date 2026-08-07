@@ -92,5 +92,5 @@ func routeStackinitLockNames() {}
 
 func init() {
 	routeStackinitLockNames()
-	routeStackprefixIndex = locking.NewMutexClass(reflect.TypeFor[routeStackRWMutex](), routeStacklockNames)
+	routeStackprefixIndex = locking.NewMutexClass(reflect.TypeOf((*routeStackRWMutex)(nil)).Elem(), routeStacklockNames)
 }

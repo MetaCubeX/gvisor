@@ -92,5 +92,5 @@ func serverEndpointinitLockNames() {}
 
 func init() {
 	serverEndpointinitLockNames()
-	serverEndpointprefixIndex = locking.NewMutexClass(reflect.TypeFor[serverEndpointRWMutex](), serverEndpointlockNames)
+	serverEndpointprefixIndex = locking.NewMutexClass(reflect.TypeOf((*serverEndpointRWMutex)(nil)).Elem(), serverEndpointlockNames)
 }
