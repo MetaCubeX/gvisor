@@ -95,6 +95,11 @@ type nic struct {
 	// experimentIPOptionEnabled indicates whether the NIC supports the
 	// experiment IP option.
 	experimentIPOptionEnabled bool
+
+	// allowPromiscuousSource indicates whether incoming packets may use source
+	// addresses represented only by temporary endpoints created for a
+	// promiscuous NIC.
+	allowPromiscuousSource atomicbitops.Bool
 }
 
 // makeNICStats initializes the NIC statistics and associates them to the global
@@ -445,6 +450,16 @@ func (n *nic) setSpoofing(enable bool) {
 // Spoofing implements NetworkInterface.
 func (n *nic) Spoofing() bool {
 	return n.spoofing.Load()
+}
+
+// setAllowPromiscuousSource enables or disables promiscuous source addresses.
+func (n *nic) setAllowPromiscuousSource(enable bool) {
+	n.allowPromiscuousSource.Store(enable)
+}
+
+// AllowPromiscuousSource implements NetworkInterface.
+func (n *nic) AllowPromiscuousSource() bool {
+	return n.allowPromiscuousSource.Load()
 }
 
 // primaryAddress returns an address that can be used to communicate with

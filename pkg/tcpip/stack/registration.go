@@ -822,6 +822,12 @@ type NetworkInterface interface {
 	// assigned to it.
 	Spoofing() bool
 
+	// AllowPromiscuousSource returns whether incoming packets may use source
+	// addresses represented only by temporary endpoints created for a
+	// promiscuous interface. It has no effect unless promiscuous mode and local
+	// packet handling are both enabled.
+	AllowPromiscuousSource() bool
+
 	// PrimaryAddress returns the primary address associated with the interface.
 	//
 	// PrimaryAddress will return the first non-deprecated address if such an

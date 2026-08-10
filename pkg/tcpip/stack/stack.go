@@ -1821,6 +1821,25 @@ func (s *Stack) SetSpoofing(nicID tcpip.NICID, enable bool) tcpip.Error {
 	return nil
 }
 
+// SetAllowPromiscuousSource controls whether incoming packets on a
+// promiscuous NIC may use source addresses represented only by temporary
+// address endpoints. Permanently assigned local source addresses are still
+// rejected when HandleLocal is enabled. The setting has no effect while the
+// NIC is not in promiscuous mode.
+func (s *Stack) SetAllowPromiscuousSource(nicID tcpip.NICID, enable bool) tcpip.Error {
+	s.mu.RLock()
+	defer s.mu.RUnlock()
+
+	nic, ok := s.nics[nicID]
+	if !ok {
+		return &tcpip.ErrUnknownNICID{}
+	}
+
+	nic.setAllowPromiscuousSource(enable)
+
+	return nil
+}
+
 // LinkResolutionResult is the result of a link address resolution attempt.
 type LinkResolutionResult struct {
 	LinkAddress tcpip.LinkAddress

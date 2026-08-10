@@ -1186,6 +1186,7 @@ func (n *nic) StateFields() []string {
 		"deliverLinkPackets",
 		"Primary",
 		"experimentIPOptionEnabled",
+		"allowPromiscuousSource",
 	}
 }
 
@@ -1212,6 +1213,7 @@ func (n *nic) StateSave(stateSinkObject state.Sink) {
 	stateSinkObject.Save(15, &n.deliverLinkPackets)
 	stateSinkObject.Save(16, &n.Primary)
 	stateSinkObject.Save(17, &n.experimentIPOptionEnabled)
+	stateSinkObject.Save(18, &n.allowPromiscuousSource)
 }
 
 func (n *nic) afterLoad(context.Context) {}
@@ -1236,6 +1238,7 @@ func (n *nic) StateLoad(ctx context.Context, stateSourceObject state.Source) {
 	stateSourceObject.Load(15, &n.deliverLinkPackets)
 	stateSourceObject.Load(16, &n.Primary)
 	stateSourceObject.Load(17, &n.experimentIPOptionEnabled)
+	stateSourceObject.Load(18, &n.allowPromiscuousSource)
 }
 
 func (p *packetEndpointList) StateTypeName() string {

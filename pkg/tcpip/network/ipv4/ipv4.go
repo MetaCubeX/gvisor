@@ -968,8 +968,11 @@ func (e *endpoint) HandlePacket(pkt *stack.PacketBuffer) {
 
 		stk := e.protocol.stack
 		if stk.HandleLocal() {
-			addressEndpoint := e.AcquireAssignedAddress(header.IPv4(pkt.NetworkHeader().Slice()).SourceAddress(), e.nic.Promiscuous(), stack.CanBePrimaryEndpoint, true /* readOnly */)
-			if addressEndpoint != nil {
+			promiscuous := e.nic.Promiscuous()
+			allowPromiscuousSource := promiscuous && e.nic.AllowPromiscuousSource()
+			// A temporary promiscuous endpoint does not represent an address owned by the stack.
+			addressEndpoint := e.AcquireAssignedAddress(header.IPv4(pkt.NetworkHeader().Slice()).SourceAddress(), promiscuous && !allowPromiscuousSource, stack.CanBePrimaryEndpoint, true /* readOnly */)
+			if addressEndpoint != nil && (!allowPromiscuousSource || addressEndpoint.GetKind().IsPermanent()) {
 				// The source address is one of our own, so we never should have gotten
 				// a packet like this unless HandleLocal is false or our NIC is the
 				// loopback interface.
